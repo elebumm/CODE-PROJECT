@@ -4,11 +4,10 @@ var converter = require('json-2-csv');
 var http = require('http');
 var fs = require('fs');
 var request = require('request');
-var pageTitle = 'Dream Job';
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: pageTitle });
+  res.render('index', { title: 'Express' });
 });
 
 router.get('/test', function(req, res, next) {
