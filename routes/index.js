@@ -177,4 +177,44 @@ router.get('/pullIDs', function(req, res, next) {
     });
 });
 
+
+router.get('/pullRetirement', function(req, res, next) {
+    request.get('http://www.edsc.gc.ca/ouvert-open/cesp-pcee/retirements_retraites.csv', function(error, response, body) {
+        if (!error && response.statusCode == 200) {
+            var temp = body;
+
+            var brokenCSV = temp.split(endOfLine);
+            var elements = brokenCSV[0].split(",");
+
+            var csv = "nCode";
+
+            for(var i = 0; i < elements.length - 1; i++){
+                csv += "," + (2012 + i);
+            }
+
+            csv += endOfLine;
+
+            csv += body;
+            console.log(csv);
+
+            var options = {"DELIMITER" : {
+                "FIELD" : ","
+            }};
+
+            var csv2jsonCallback = function (err, json) {
+                if (err) {
+                    res.json({
+                        "error" : "ERROR, something went wrong"
+                    });
+                };
+
+                res.json(json);
+                console.log(typeof json);
+                console.log(json);
+            }
+            converter.csv2json(csv, csv2jsonCallback, options);
+        }
+    });
+});
+
 module.exports = router;
