@@ -1327,41 +1327,41 @@ mark,
   color: #777;
 }
 .text-primary {
-  color: #337ab7;
+  color: #bce03d;
 }
 a.text-primary:hover {
-  color: #286090;
+  color: #aaa;
 }
 .text-success {
-  color: #3c763d;
+  color: #bce03d;
 }
 a.text-success:hover {
-  color: #2b542c;
+  color: #aaa;
 }
 .text-info {
-  color: #31708f;
+  color: #bce03d;
 }
 a.text-info:hover {
-  color: #245269;
+  color: #aaa;
 }
 .text-warning {
-  color: #8a6d3b;
+  color: #bce03d;
 }
 a.text-warning:hover {
-  color: #66512c;
+  color: #aaa;
 }
 .text-danger {
-  color: #a94442;
+  color: #bce03d;
 }
 a.text-danger:hover {
-  color: #843534;
+  color: #aaa;
 }
 .bg-primary {
   color: #fff;
-  background-color: #337ab7;
+  background-color: #bce03d;
 }
 a.bg-primary:hover {
-  background-color: #286090;
+  background-color: #bce03d;
 }
 .bg-success {
   background-color: #dff0d8;

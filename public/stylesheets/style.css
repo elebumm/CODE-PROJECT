@@ -358,5 +358,9 @@ table.dataTable thead .sorting:after {
 }
 
 #welcomeImage {
-    max-width: 75%;
+    width: 100%;
+}
+
+#home-icon {
+    color: #bce03d;
 }

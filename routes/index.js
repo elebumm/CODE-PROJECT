@@ -6,8 +6,18 @@ var fs = require('fs');
 var request = require('request');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/index', function(req, res, next) {
   res.render('index', { title: 'Dream Job'});
+});
+
+/* GET about page. */
+router.get('/about', function(req, res, next) {
+    res.render('about', {title: 'About Dream Job'});
+});
+
+/* GET about page. */
+router.get('/contact', function(req, res, next) {
+    res.render('contact', {title: 'Contact Dream Job'});
 });
 
 //router.get('/test', function(req, res, next) {
