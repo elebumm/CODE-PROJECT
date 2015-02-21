@@ -5,7 +5,8 @@ var http = require('http');
 var fs = require('fs');
 var request = require('request');
 var Grouping = require('../models/grouping');
-
+var retirement = require('../models/retirement');
+var emp_projections = require('../models/emp_projections');
 var endOfLine = require('os').EOL;
 
 /* GET home page. */
@@ -189,13 +190,13 @@ router.get('/pullRetirement', function(req, res, next) {
             var csv = "nCode";
 
             for(var i = 0; i < elements.length - 1; i++){
-                csv += "," + (2012 + i);
+                csv += ",r_" + (2013 + i);
             }
 
             csv += endOfLine;
 
             csv += body;
-            console.log(csv);
+            //console.log(csv);
 
             var options = {"DELIMITER" : {
                 "FIELD" : ","
@@ -204,17 +205,102 @@ router.get('/pullRetirement', function(req, res, next) {
             var csv2jsonCallback = function (err, json) {
                 if (err) {
                     res.json({
-                        "error" : "ERROR, something went wrong"
+                        "error": "ERROR, something went wrong"
                     });
-                };
+                }
+                    for (var i = 0; i < json.length; i++) {
+                        if (typeof(json[i].nCode) != "undefined") {
+                            var group = new retirement({
+                                ID: json[i].nCode,
+                                r_2013: json[i].r_2013,
+                                r_2014: json[i].r_2014,
+                                r_2015: json[i].r_2015,
+                                r_2016: json[i].r_2016,
+                                r_2017: json[i].r_2017,
+                                r_2018: json[i].r_2018,
+                                r_2019: json[i].r_2019,
+                                r_2020: json[i].r_2020,
+                                r_2021: json[i].r_2021,
+                                r_2022: json[i].r_2022
+                            });
 
-                res.json(json);
-                console.log(typeof json);
-                console.log(json);
+                            group.save();
+                            console.log("Item " + i + " insterted.");
+                            //console.log(finalJSON[i]);
+
+                        }
+                    }
+                    res.json(json);
+                    //console.log(typeof json);
+                    //console.log(json);
+
             }
             converter.csv2json(csv, csv2jsonCallback, options);
-        }
+    };
+
     });
 });
 
+router.get('/pullEmpProjection', function(req, res, next) {
+    request.get('http://www.edsc.gc.ca/ouvert-open/cesp-pcee/employment_emploi.csv', function(error, response, body) {
+        if (!error && response.statusCode == 200) {
+            var temp = body;
+
+            var brokenCSV = temp.split(endOfLine);
+            var elements = brokenCSV[0].split(",");
+
+            var csv = "nCode";
+
+            for(var i = 0; i < elements.length - 1; i++){
+                csv += ",r_" + (2013 + i);
+            }
+
+            csv += endOfLine;
+
+            csv += body;
+            //console.log(csv);
+
+            var options = {"DELIMITER" : {
+                "FIELD" : ","
+            }};
+
+            var csv2jsonCallback = function (err, json) {
+                if (err) {
+                    res.json({
+                        "error": "ERROR, something went wrong"
+                    });
+                }
+                for (var i = 0; i < json.length; i++) {
+                    if (typeof(json[i].nCode) != "undefined") {
+                        var group = new emp_projections({
+                            ID: json[i].nCode,
+                            r_2013: json[i].r_2013,
+                            r_2014: json[i].r_2014,
+                            r_2015: json[i].r_2015,
+                            r_2016: json[i].r_2016,
+                            r_2017: json[i].r_2017,
+                            r_2018: json[i].r_2018,
+                            r_2019: json[i].r_2019,
+                            r_2020: json[i].r_2020,
+                            r_2021: json[i].r_2021,
+                            r_2022: json[i].r_2022,
+                            r_2023: json[i].r_2023
+                        });
+
+                        group.save();
+                        console.log("Item " + i + " insterted.");
+                        //console.log(finalJSON[i]);
+
+                    }
+                }
+                res.json(json);
+                //console.log(typeof json);
+                //console.log(json);
+
+            }
+            converter.csv2json(csv, csv2jsonCallback, options);
+        };
+
+    });
+});
 module.exports = router;

@@ -2,7 +2,7 @@
  * Created by lewismenelaws on 15-02-21.
  */
 var mongoose = require('mongoose');
-var db = require('.../db');
+var db = require('../db');
 
 var retirement = db.model('retirement', {
     ID : { type: String, required : true },
