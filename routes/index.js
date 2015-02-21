@@ -9,8 +9,18 @@ var Grouping = require('../models/grouping');
 var endOfLine = require('os').EOL;
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'DickBut' });
+router.get('/index', function(req, res, next) {
+  res.render('index', { title: 'Dream Job'});
+});
+
+/* GET about page. */
+router.get('/about', function(req, res, next) {
+    res.render('about', {title: 'About Dream Job'});
+});
+
+/* GET about page. */
+router.get('/contact', function(req, res, next) {
+    res.render('contact', {title: 'Contact Dream Job'});
 });
 
 router.get('/dataPull', function(req, res, next) {

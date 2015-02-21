@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 //var csv = require('express-csv');
 
 var routes = require('./routes/index');
+var routes = require('./routes/index');
 var users = require('./routes/users');
 var test = require('./routes/test');
 
