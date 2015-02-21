@@ -1,6 +1,6 @@
 /**
  * Created by Steven Lambe on 2/21/15.
- */
+ *//**
 var db = require('../db');
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
@@ -17,3 +17,4 @@ var Grouping = db.model('Grouping', {
 });
 
 module.exports = Grouping;
+ */
