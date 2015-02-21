@@ -13,6 +13,7 @@
     "express": "~4.11.1",
     "fs": "0.0.2",
     "json-2-csv": "^1.0.8",
+    "mongoose": "^3.8.23",
     "morgan": "~1.5.1",
     "request": "^2.53.0",
     "serve-favicon": "~2.2.0"
