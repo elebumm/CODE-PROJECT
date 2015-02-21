@@ -6,6 +6,8 @@ var fs = require('fs');
 var request = require('request');
 
 /* GET home page. */
+
+//Testing out printing to index.ejs
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express',
   lewis : 'lewis',
@@ -15,7 +17,7 @@ router.get('/', function(req, res, next) {
   abdul: 'abdul'});
 });
 
-router.get('/test', function(req, res, next) {
+/*router.get('/test', function(req, res, next) {
     request.get('http://www.cbsa-asfc.gc.ca/bwt-taf/bwt-eng.csv', function (error, response, body) {
         if (!error && response.statusCode == 200) {
             var csv = body;
@@ -39,6 +41,6 @@ router.get('/test', function(req, res, next) {
             converter.csv2json(csv, csv2jsonCallback, options);
         }
     });
-});
+});*/
 
 module.exports = router;
