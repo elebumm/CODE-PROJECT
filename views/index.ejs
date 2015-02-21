@@ -11,10 +11,6 @@
 
     <title><%= title %></title>
 
-    <script src="/Charts/Chart.js"></script>
-
-
-
     <!-- Bootstrap Core CSS -->
     <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -38,73 +34,28 @@
 
 <body>
 
-<div id="wrapper">
+    <div id="wrapper">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.ejs"><%= title %></a>
-        </div>
-        <div class="navbar-right"></div>
-        <!-- /.navbar-header -->
-        <form class="navbar-form navbar-right" role="search">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Sarnia, ON">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.ejs">CODE 2015 Contribution v.1</a>
             </div>
-            <button type="submit" class="btn btn-default">Search</button>
-        </form>
-    </nav>
-
-
-    <!-- /#page-wrapper -->
             <!-- /.navbar-header -->
 
+            <ul class="nav navbar-top-links navbar-right">
 
+                    </ul>
 
-
+        </nav>
 
         <div id="page-wrapper">
-
-            <script>
-                var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
-
-                var barChartData = {
-                    labels : ["January","February","March","April","May","June","July"],
-                    datasets : [
-                        {
-                            fillColor : "rgba(220,220,220,0.5)",
-                            strokeColor : "rgba(220,220,220,0.8)",
-                            highlightFill: "rgba(220,220,220,0.75)",
-                            highlightStroke: "rgba(220,220,220,1)",
-                            data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
-                        },
-                        {
-                            fillColor : "rgba(151,187,205,0.5)",
-                            strokeColor : "rgba(151,187,205,0.8)",
-                            highlightFill : "rgba(151,187,205,0.75)",
-                            highlightStroke : "rgba(151,187,205,1)",
-                            data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
-                        }
-                    ]
-
-                }
-                window.onload = function(){
-                    var ctx = document.getElementById("canvas").getContext("2d");
-                    window.myBar = new Chart(ctx).Bar(barChartData, {
-                        responsive : true
-                    });
-                }
-
-            </script>
-            <div style="width: 50%">
-            <canvas id="canvas" height="100" width="100" style="width : 50%"></canvas>
-            </div>
 
         </div>
         <!-- /#page-wrapper -->
@@ -123,9 +74,6 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="/sb-admin-2.js"></script>
-
-    <!-- Declaring Chart.js -->
-
 
 </body>
 

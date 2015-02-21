@@ -1,39 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce55d4bd-1e63-4108-b002-e222fe1df26d" name="Default" comment="Chart is now">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/docs/00-Getting-Started.md" afterPath="$PROJECT_DIR$/public/Charts/docs/00-Getting-Started.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/docs/01-Line-Chart.md" afterPath="$PROJECT_DIR$/public/Charts/docs/01-Line-Chart.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/docs/02-Bar-Chart.md" afterPath="$PROJECT_DIR$/public/Charts/docs/02-Bar-Chart.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/docs/03-Radar-Chart.md" afterPath="$PROJECT_DIR$/public/Charts/docs/03-Radar-Chart.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/docs/04-Polar-Area-Chart.md" afterPath="$PROJECT_DIR$/public/Charts/docs/04-Polar-Area-Chart.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/docs/05-Pie-Doughnut-Chart.md" afterPath="$PROJECT_DIR$/public/Charts/docs/05-Pie-Doughnut-Chart.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/docs/06-Advanced.md" afterPath="$PROJECT_DIR$/public/Charts/docs/06-Advanced.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/docs/07-Notes.md" afterPath="$PROJECT_DIR$/public/Charts/docs/07-Notes.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/public/Charts/CONTRIBUTING.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/src/Chart.Bar.js" afterPath="$PROJECT_DIR$/public/Charts/src/Chart.Bar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/src/Chart.Core.js" afterPath="$PROJECT_DIR$/public/Charts/src/Chart.Core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/src/Chart.Doughnut.js" afterPath="$PROJECT_DIR$/public/Charts/src/Chart.Doughnut.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/src/Chart.Line.js" afterPath="$PROJECT_DIR$/public/Charts/src/Chart.Line.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/src/Chart.PolarArea.js" afterPath="$PROJECT_DIR$/public/Charts/src/Chart.PolarArea.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/src/Chart.Radar.js" afterPath="$PROJECT_DIR$/public/Charts/src/Chart.Radar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/Chart.js" afterPath="$PROJECT_DIR$/public/Charts/Chart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/Chart.min.js" afterPath="$PROJECT_DIR$/public/Charts/Chart.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/LICENSE.md" afterPath="$PROJECT_DIR$/public/Charts/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/README.md" afterPath="$PROJECT_DIR$/public/Charts/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/samples/bar.html" afterPath="$PROJECT_DIR$/public/Charts/samples/bar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/bower.json" afterPath="$PROJECT_DIR$/public/Charts/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/samples/doughnut.html" afterPath="$PROJECT_DIR$/public/Charts/samples/doughnut.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/gulpfile.js" afterPath="$PROJECT_DIR$/public/Charts/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
+    <list default="true" id="ce55d4bd-1e63-4108-b002-e222fe1df26d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/samples/line-customTooltips.html" afterPath="$PROJECT_DIR$/public/Charts/samples/line-customTooltips.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/samples/line.html" afterPath="$PROJECT_DIR$/public/Charts/samples/line.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/package.json" afterPath="$PROJECT_DIR$/public/Charts/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/samples/pie-customTooltips.html" afterPath="$PROJECT_DIR$/public/Charts/samples/pie-customTooltips.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/samples/pie.html" afterPath="$PROJECT_DIR$/public/Charts/samples/pie.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/samples/polar-area.html" afterPath="$PROJECT_DIR$/public/Charts/samples/polar-area.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Charts/samples/radar.html" afterPath="$PROJECT_DIR$/public/Charts/samples/radar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CODE-PROJECT.iws" />
@@ -61,23 +31,19 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5202312" vertical-offset="585" max-vertical-offset="2070">
-              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#canvas#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-5.230769" vertical-offset="272" max-vertical-offset="1462">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,19 +51,45 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="405">
-              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="476">
+              <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+              <folding>
+                <marker date="1424534871236" expanded="true" signature="61:412" placeholder="{&quot;name&quot;: &quot;test&quot;...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.2453152" vertical-offset="102" max-vertical-offset="2499">
+              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <file leaf-file-name="db.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
-              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#46#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="grouping.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/grouping.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#46#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,13 +98,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <push-targets>
+      <push-target-info repo="$PROJECT_DIR$" source="master" target-remote="origin" target-branch="Steve" />
+    </push-targets>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/index.ejs" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/db.js" />
+        <option value="$PROJECT_DIR$/models/grouping.js" />
+        <option value="$PROJECT_DIR$/routes/index.js" />
       </list>
     </option>
   </component>
@@ -120,8 +118,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -155,6 +155,72 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CODE-PROJECT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CODE-PROJECT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CODE-PROJECT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CODE-PROJECT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CODE-PROJECT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CODE-PROJECT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CODE-PROJECT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CODE-PROJECT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CODE-PROJECT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CODE-PROJECT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -162,8 +228,6 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="FullScreen" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -217,38 +281,326 @@
       <option name="number" value="Default" />
       <updated>1424488627324</updated>
     </task>
-    <task id="LOCAL-00001" summary="Added Chart">
-      <created>1424511485351</created>
-      <option name="number" value="00001" />
+    <task id="LOCAL-00031" summary="Incremental step.">
+      <created>1424516640325</created>
+      <option name="number" value="00031" />
       <option name="project" value="LOCAL" />
-      <updated>1424511485351</updated>
+      <updated>1424516640325</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00032" summary="Incremental step.">
+      <created>1424516763619</created>
+      <option name="number" value="00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1424516763619</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Incremental step.">
+      <created>1424517227485</created>
+      <option name="number" value="00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1424517227485</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Incremental step.">
+      <created>1424517464568</created>
+      <option name="number" value="00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1424517464568</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Incremental step. General parsing complete, now to convert to JSON.">
+      <created>1424517546102</created>
+      <option name="number" value="00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1424517546102</updated>
+    </task>
+    <task id="LOCAL-00036" summary="JSON conversion V1">
+      <created>1424520400231</created>
+      <option name="number" value="00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1424520400231</updated>
+    </task>
+    <task id="LOCAL-00037" summary="JSON conversion V1.1">
+      <created>1424520438296</created>
+      <option name="number" value="00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1424520438296</updated>
+    </task>
+    <task id="LOCAL-00038" summary="JSON conversion V1.2">
+      <created>1424520592063</created>
+      <option name="number" value="00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1424520592063</updated>
+    </task>
+    <task id="LOCAL-00039" summary="JSON conversion V1.3">
+      <created>1424520867185</created>
+      <option name="number" value="00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1424520867185</updated>
+    </task>
+    <task id="LOCAL-00040" summary="JSON conversion V1.4">
+      <created>1424520964264</created>
+      <option name="number" value="00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1424520964264</updated>
+    </task>
+    <task id="LOCAL-00041" summary="JSON conversion V1.5">
+      <created>1424521072184</created>
+      <option name="number" value="00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1424521072184</updated>
+    </task>
+    <task id="LOCAL-00042" summary="JSON conversion V1.6">
+      <created>1424521175986</created>
+      <option name="number" value="00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1424521175986</updated>
+    </task>
+    <task id="LOCAL-00043" summary="JSON conversion testing basics.">
+      <created>1424521270434</created>
+      <option name="number" value="00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1424521270434</updated>
+    </task>
+    <task id="LOCAL-00044" summary="JSON conversion V1.7, issue is the json response not outputting &quot;proper&quot; JSON.">
+      <created>1424521374516</created>
+      <option name="number" value="00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1424521374516</updated>
+    </task>
+    <task id="LOCAL-00045" summary="JSON conversion V1.6, Need to convert from string to JSON. Added standard JS JSON parse.">
+      <created>1424521489958</created>
+      <option name="number" value="00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1424521489958</updated>
+    </task>
+    <task id="LOCAL-00046" summary="JSON conversion V1.6.1, Fixing the array of objects.">
+      <created>1424521561591</created>
+      <option name="number" value="00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1424521561591</updated>
+    </task>
+    <task id="LOCAL-00047" summary="JSON conversion V1.6.2, Fixed typo.">
+      <created>1424521588844</created>
+      <option name="number" value="00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1424521588844</updated>
+    </task>
+    <task id="LOCAL-00048" summary="JSON conversion V1.6.3, re-added quotations on elements.">
+      <created>1424521687650</created>
+      <option name="number" value="00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1424521687650</updated>
+    </task>
+    <task id="LOCAL-00049" summary="JSON conversion V1.6.4, removed limiter.">
+      <created>1424521786595</created>
+      <option name="number" value="00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1424521786595</updated>
+    </task>
+    <task id="LOCAL-00050" summary="JSON conversion V1.6.5, added a check for undefined/null possibility in the sub categories loop.">
+      <created>1424521953157</created>
+      <option name="number" value="00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1424521953275</updated>
+    </task>
+    <task id="LOCAL-00051" summary="JSON conversion V1.6.6, re-added processing limitation in hopes of finding the issue line.">
+      <created>1424522110397</created>
+      <option name="number" value="00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1424522110398</updated>
+    </task>
+    <task id="LOCAL-00052" summary="JSON conversion V1.6.7, fixed the limiter as it was on the wrong loop.">
+      <created>1424522288551</created>
+      <option name="number" value="00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1424522288551</updated>
+    </task>
+    <task id="LOCAL-00053" summary="JSON conversion V1.6.7.1">
+      <created>1424522397274</created>
+      <option name="number" value="00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1424522397274</updated>
+    </task>
+    <task id="LOCAL-00054" summary="JSON conversion V1.6.7.2, trying 50 records at a time.">
+      <created>1424522482713</created>
+      <option name="number" value="00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1424522482713</updated>
+    </task>
+    <task id="LOCAL-00055" summary="JSON conversion V1.6.7.3, trying 100 records at a time.">
+      <created>1424522542539</created>
+      <option name="number" value="00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1424522542539</updated>
+    </task>
+    <task id="LOCAL-00056" summary="JSON conversion V1.6.7.4, trying 150 records at a time.">
+      <created>1424522623210</created>
+      <option name="number" value="00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1424522623211</updated>
+    </task>
+    <task id="LOCAL-00057" summary="JSON conversion V1.6.7.5, trying 200 records at a time.">
+      <created>1424522675653</created>
+      <option name="number" value="00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1424522675654</updated>
+    </task>
+    <task id="LOCAL-00058" summary="JSON conversion V1.6.7.6, trying 250 records at a time.">
+      <created>1424522790905</created>
+      <option name="number" value="00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1424522790906</updated>
+    </task>
+    <task id="LOCAL-00059" summary="JSON conversion V1.6.7.7, ID N7370 breaks processor due to double hyphen, implemented a regular expression to try and only grab first occurrence of a hyphen in that segment.">
+      <created>1424523107987</created>
+      <option name="number" value="00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1424523107987</updated>
+    </task>
+    <task id="LOCAL-00060" summary="JSON conversion V1.6.7.8, working wih regular expression to make it work hopefully.">
+      <created>1424523246097</created>
+      <option name="number" value="00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1424523246097</updated>
+    </task>
+    <task id="LOCAL-00061" summary="JSON conversion V1.6.7.9, now has a check to make sure there are no double split points. This data was poorly formed on creation.">
+      <created>1424523963731</created>
+      <option name="number" value="00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1424523963731</updated>
+    </task>
+    <task id="LOCAL-00062" summary="JSON conversion V1.6.7.10, no sleep and you start missing stuff.">
+      <created>1424524252355</created>
+      <option name="number" value="00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1424524252355</updated>
+    </task>
+    <task id="LOCAL-00063" summary="JSON conversion V1.6.7.11">
+      <created>1424525034805</created>
+      <option name="number" value="00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1424525034805</updated>
+    </task>
+    <task id="LOCAL-00064" summary="JSON conversion V1.6.7.11.1m debug lines.">
+      <created>1424525264153</created>
+      <option name="number" value="00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1424525264154</updated>
+    </task>
+    <task id="LOCAL-00065" summary="JSON conversion V1.6.7.11.2 debug lines.">
+      <created>1424525323357</created>
+      <option name="number" value="00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1424525323357</updated>
+    </task>
+    <task id="LOCAL-00066" summary="JSON conversion V1.6.7.11.3 debug lines.">
+      <created>1424525373178</created>
+      <option name="number" value="00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1424525373178</updated>
+    </task>
+    <task id="LOCAL-00067" summary="JSON conversion V1.6.7.11.4 debug lines.">
+      <created>1424525450894</created>
+      <option name="number" value="00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1424525450894</updated>
+    </task>
+    <task id="LOCAL-00068" summary="JSON conversion V1.6.8, processing full dataset.">
+      <created>1424525517639</created>
+      <option name="number" value="00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1424525517639</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Adding other endpoints cause a pull for new information from the server.">
+      <created>1424531192136</created>
+      <option name="number" value="00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1424531192136</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Modified the split on records to actually be splitting the first record.">
+      <created>1424531296444</created>
+      <option name="number" value="00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1424531296444</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Modified loop to try and get the correct years. Removed unnecessary end of line from the CSV header.">
+      <created>1424531690374</created>
+      <option name="number" value="00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1424531690374</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Added a debug line to see the number of elements.">
+      <created>1424531799060</created>
+      <option name="number" value="00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1424531799060</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Looking at what's in the loop.">
+      <created>1424532187585</created>
+      <option name="number" value="00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1424532187585</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Put the correct URL in the request for the next document to process.">
+      <created>1424532273217</created>
+      <option name="number" value="00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1424532273218</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Modified loop a bit, removed the debug loop, and made the header a CSV style header.">
+      <created>1424532393141</created>
+      <option name="number" value="00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1424532393141</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Modified the math for the year in the loop.">
+      <created>1424532474445</created>
+      <option name="number" value="00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1424532474445</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Added parser to test output.">
+      <created>1424532576988</created>
+      <option name="number" value="00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1424532576988</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Fixed library includes.">
+      <created>1424532641656</created>
+      <option name="number" value="00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1424532641656</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Added database files and a basic setup for the groups.">
+      <created>1424534530414</created>
+      <option name="number" value="00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1424534530414</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14698794" sideWeight="0.49964765" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1277843" sideWeight="0.5013889" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17449665" sideWeight="0.50190115" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24968314" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.110416666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11089987" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1277843" sideWeight="0.49861112" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3385542" sideWeight="0.49964765" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17449665" sideWeight="0.49809885" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -266,8 +618,32 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Added Chart" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Chart" />
+    <MESSAGE value="JSON conversion V1.6.7.3, trying 100 records at a time." />
+    <MESSAGE value="JSON conversion V1.6.7.4, trying 150 records at a time." />
+    <MESSAGE value="JSON conversion V1.6.7.5, trying 200 records at a time." />
+    <MESSAGE value="JSON conversion V1.6.7.6, trying 250 records at a time." />
+    <MESSAGE value="JSON conversion V1.6.7.7, ID N7370 breaks processor due to double hyphen, implemented a regular expression to try and only grab first occurrence of a hyphen in that segment." />
+    <MESSAGE value="JSON conversion V1.6.7.8, working wih regular expression to make it work hopefully." />
+    <MESSAGE value="JSON conversion V1.6.7.9, now has a check to make sure there are no double split points. This data was poorly formed on creation." />
+    <MESSAGE value="JSON conversion V1.6.7.10, no sleep and you start missing stuff." />
+    <MESSAGE value="JSON conversion V1.6.7.11" />
+    <MESSAGE value="JSON conversion V1.6.7.11.1m debug lines." />
+    <MESSAGE value="JSON conversion V1.6.7.11.2 debug lines." />
+    <MESSAGE value="JSON conversion V1.6.7.11.3 debug lines." />
+    <MESSAGE value="JSON conversion V1.6.7.11.4 debug lines." />
+    <MESSAGE value="JSON conversion V1.6.8, processing full dataset." />
+    <MESSAGE value="Adding other endpoints cause a pull for new information from the server." />
+    <MESSAGE value="Modified the split on records to actually be splitting the first record." />
+    <MESSAGE value="Modified loop to try and get the correct years. Removed unnecessary end of line from the CSV header." />
+    <MESSAGE value="Added a debug line to see the number of elements." />
+    <MESSAGE value="Looking at what's in the loop." />
+    <MESSAGE value="Put the correct URL in the request for the next document to process." />
+    <MESSAGE value="Modified loop a bit, removed the debug loop, and made the header a CSV style header." />
+    <MESSAGE value="Modified the math for the year in the loop." />
+    <MESSAGE value="Added parser to test output." />
+    <MESSAGE value="Fixed library includes." />
+    <MESSAGE value="Added database files and a basic setup for the groups." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added database files and a basic setup for the groups." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -276,35 +652,33 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1080">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1156">
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1290">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#canvas#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="405">
+        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="442">
           <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding />
+          <folding>
+            <marker date="1424534871236" expanded="true" signature="61:412" placeholder="{&quot;name&quot;: &quot;test&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="675">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="765">
           <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
           <folding />
         </state>
@@ -314,7 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -339,39 +712,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1080">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="405">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="476">
+          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+          <folding>
+            <marker date="1424534871236" expanded="true" signature="61:412" placeholder="{&quot;name&quot;: &quot;test&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5202312" vertical-offset="585" max-vertical-offset="2070">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        <state vertical-scroll-proportion="-5.230769" vertical-offset="272" max-vertical-offset="1462">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
           <folding>
-            <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#canvas#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#0#46#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/grouping.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#46#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2453152" vertical-offset="102" max-vertical-offset="2499">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
