@@ -5,7 +5,7 @@
  */
 
 body {
-    background-color: #f8f8f8;
+    background-color: #fff;
 }
 
 #wrapper {
@@ -95,11 +95,11 @@ body {
 }
 
 .sidebar ul li {
-    border-bottom: 1px solid #e7e7e7;
+    border-bottom: 1px solid #eee;
 }
 
 .sidebar ul li a.active {
-    background-color: #eee;
+    background-color: #fff;
 }
 
 .sidebar .arrow {
@@ -149,7 +149,7 @@ body {
 }
 
 .btn-primary.btn-outline {
-    color: #428bca;
+    color: #bce03d;
 }
 
 .btn-success.btn-outline {
@@ -157,7 +157,7 @@ body {
 }
 
 .btn-info.btn-outline {
-    color: #5bc0de;
+    color: #bce03d;
 }
 
 .btn-warning.btn-outline {
@@ -173,7 +173,7 @@ body {
 .btn-info.btn-outline:hover,
 .btn-warning.btn-outline:hover,
 .btn-danger.btn-outline:hover {
-    color: #fff;
+    color: #bce03d;
 }
 
 .chat {
@@ -304,21 +304,21 @@ table.dataTable thead .sorting:after {
 }
 
 .panel-green {
-    border-color: #5cb85c;
+    border-color: #bce03d;
 }
 
 .panel-green .panel-heading {
-    border-color: #5cb85c;
+    border-color: #bce03d;
     color: #fff;
-    background-color: #5cb85c;
+    background-color: #bce03d;
 }
 
 .panel-green a {
-    color: #5cb85c;
+    color: #bce03d;
 }
 
 .panel-green a:hover {
-    color: #3d8b3d;
+    color: #bce03d;
 }
 
 .panel-red {
@@ -355,4 +355,8 @@ table.dataTable thead .sorting:after {
 
 .panel-yellow a:hover {
     color: #df8a13;
+}
+
+#welcomeImage {
+    max-width: 75%;
 }
