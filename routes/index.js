@@ -1,16 +1,16 @@
 var express = require('express');
 var router = express.Router();
 var converter = require('json-2-csv');
+//var converter = require("csvtojson").core.Converter;
 var http = require('http');
 var fs = require('fs');
 var request = require('request');
-var Grouping = require('../models/grouping');
 
 var endOfLine = require('os').EOL;
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'DickBut' });
+  res.render('index', { title: 'Express' });
 });
 
 router.get('/dataPull', function(req, res, next) {
@@ -41,22 +41,13 @@ router.get('/dataPull', function(req, res, next) {
                 if (err)
                 {
                     res.json({
-                        "error" : "ERROR, please don't contact us to see what's wrong!"
+                        "error" : "ERROR, please contact us to see what's wrong!"
                     });
                 };
-
-                var testCounter = 0;
-
-                for(var i = 0; i < json.length; i++)
-                {
-                    testCounter++;
-                }
-
                 res.json(json);
                 console.log(typeof json);
-                //console.log(json.length);
+                console.log(json.length);
                 console.log(json);
-                console.log(testCounter);
             }
 
             converter.csv2json(csv, csv2jsonCallback, options);
@@ -67,7 +58,29 @@ router.get('/dataPull', function(req, res, next) {
 router.get('/pullIDs', function(req, res, next) {
     request.get('http://www.edsc.gc.ca/ouvert-open/bca-seb/imt-lmi/NOC_occ_grouping_eng.csv', function (error, response, body) {
         if (!error && response.statusCode == 200) {
+            //var csv = "nCode, nTitle, sections" + endOfLine;
             var csv = body;
+            //console.log(csv);
+
+            //var options = {"DELIMITER" : {
+            //    "FIELD" : ",",
+            //    "ARRAY" : "*"
+            //}};
+            //
+            //var csv2jsonCallback = function (err, json) {
+            //    if (err)
+            //    {
+            //        res.json({
+            //            "error" : "ERROR, please contact us to see what's wrong!"
+            //        });
+            //    };
+            //    res.json(json);
+            //    console.log(typeof json);
+            //    console.log(json.length);
+            //    console.log(json);
+            //}
+            //
+            //converter.csv2json(csv, csv2jsonCallback, options);
 
             var brokenCSV = csv.split(endOfLine);
             var subBroken;
@@ -134,6 +147,8 @@ router.get('/pullIDs', function(req, res, next) {
             testJSON += " ]";
             var finalJSON = JSON.parse(testJSON);
             res.json(finalJSON);
+            //res.json({a:1});
+            //console.log(brokenCSV.length);
         }
         else
         {
