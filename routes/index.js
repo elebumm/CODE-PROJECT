@@ -44,13 +44,19 @@ router.get('/dataPull', function(req, res, next) {
                         "error" : "ERROR, please don't contact us to see what's wrong!"
                     });
                 };
+
+                var testCounter = 0;
+
+                for(var i = 0; i < json.length; i++)
+                {
+                    testCounter++;
+                }
+
                 res.json(json);
                 console.log(typeof json);
-
-
-
-                console.log(json.length);
+                //console.log(json.length);
                 console.log(json);
+                console.log(testCounter);
             }
 
             converter.csv2json(csv, csv2jsonCallback, options);
