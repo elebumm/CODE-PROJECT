@@ -12,7 +12,7 @@ var vacancy_stats = db.model('vacancy_stats', {
     naics : {type : String, required : true},
     vector : {type : String, required : true},
     coordinate : {type : String, required : true},
-    value : {type : double, required true}
+    value : {type : double, required : true}
 });
 
 module.exports = vacancy_stats;
