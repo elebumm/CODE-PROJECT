@@ -13,11 +13,7 @@ var endOfLine = require('os').EOL;
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-<<<<<<< HEAD
   res.render('index', { title: 'DreamJob | Youth Employment'});
-=======
-  res.render('index', { title: 'Express' });
->>>>>>> 6a6092147f148ef691384328825a22d7713e366f
 });
 
 /* GET about page. */
