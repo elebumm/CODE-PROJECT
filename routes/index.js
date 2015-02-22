@@ -207,17 +207,27 @@ router.get('/dataPull', function(req, res, next) {
 
             for(var i = 0; i < elements.length - 1; i++)
             {
-                csv += "," + (2012 + i);
+                csv += ",p_" + (2013 + i);
             }
 
             csv += endOfLine;
 
             csv += body;
-            console.log(csv);
+            //console.log(csv);
+
+
+
+
+
 
             var options = {"DELIMITER" : {
                 "FIELD" : ","
             }};
+
+
+
+
+
 
             var csv2jsonCallback = function (err, json) {
                 if (err)
@@ -227,16 +237,33 @@ router.get('/dataPull', function(req, res, next) {
                     });
                 };
 
-                //var counter = 0;
-                //
-                //for(var i = 0; i < json.length; i++)
-                //{
-                //    counter++;
-                //}
+                for (var i = 0; i < json.length; i++) {
+                    if (typeof(json[i].nCode) != "undefined") {
+                        var group = new emp_projections({
+                            ID: json[i].nCode,
+                            p_2012: json[i].p_2012,
+                            p_2013: json[i].p_2013,
+                            p_2014: json[i].p_2014,
+                            p_2015: json[i].p_2015,
+                            p_2016: json[i].p_2016,
+                            p_2017: json[i].p_2017,
+                            p_2018: json[i].p_2018,
+                            p_2019: json[i].p_2019,
+                            p_2020: json[i].p_2020,
+                            p_2021: json[i].p_2021,
+                            p_2022: json[i].p_2022,
+                            p_2023: json[i].p_2023
+                        });
+
+                        group.save();
+                        console.log("Item " + i + " insterted.");
+                        //console.log(finalJSON[i]);
+                    }
+                }
 
                 res.json(json);
-                console.log(typeof json);
-                console.log(json);
+                //console.log(typeof json);
+                //console.log(json);
                 //console.log(counter);
             }
 
