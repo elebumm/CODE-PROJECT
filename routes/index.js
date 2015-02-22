@@ -13,17 +13,17 @@ var Converter = require("csvtojson").core.Converter;
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Dream Job'});
+  res.render('index', { title: 'DreamJob | Youth Employment'});
 });
 
 /* GET about page. */
 router.get('/about', function(req, res, next) {
-    res.render('about', {title: 'About Dream Job'});
+    res.render('about', {title: 'About DreamJob'});
 });
 
 /* GET about page. */
 router.get('/contact', function(req, res, next) {
-    res.render('contact', {title: 'Contact Dream Job'});
+    res.render('contact', {title: 'ContactDream Job'});
 });
 
 router.get('/dataPull', function(req, res, next) {
