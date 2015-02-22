@@ -11,6 +11,8 @@
 
     <title><%= title %></title>
 
+    <script src="/Charts/Chart.js"></script>
+
     <!-- Bootstrap Core CSS -->
     <link href="/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 
@@ -34,7 +36,7 @@
 
 <body>
 
-<div id="wrapper">
+    <div id="wrapper">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
@@ -72,7 +74,7 @@
                     <li>
                         <a href="#"><i class="fa fa-wrench fa-fw"></i> Filters<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <form role="search">
+                            <form class="navbar-form" role="search">
                                 <li>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Example</label>
@@ -99,9 +101,6 @@
                                         <input type="checkbox"> Check me out
                                         </label>
                                     </div>
-                                </li>
-                                <li>
-
                                 </li>
                                 <button type="submit" class="btn btn-default">Submit</button>
                             </form>
@@ -152,46 +151,12 @@
                 }
 
             </script>
-            <!--    <div style="width: 35%">
+
+            <div style="width: 35%">
               <canvas id="canvas" height="100" width="100" style="width : 50%"></canvas>
-            </div> -->
-
-            <div class="container-fluid">
-                <div class="page-header">
-                    <span class="text-primary"><h1>In My Life</span> <small>I want to...</small></h1>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <ul class="list-group">
-                            <li class="list-group-item"><i class="glyphicon glyphicon-triangle-right fa-fw"></i> Be a <strong>Scientist</strong>!</li>
-                            <li class="list-group-item"><i class="glyphicon glyphicon-triangle-right fa-fw"></i> Work with <strong>Computers</strong>!</li>
-                            <li class="list-group-item"><i class="glyphicon glyphicon-triangle-right fa-fw"></i> Teach <strong>Overseas</strong>!</li>
-                            <li class="list-group-item"><i class="glyphicon glyphicon-triangle-right fa-fw"></i> Earn a <strong>Comfortable Living</strong>!</li>
-                            <li class="list-group-item"><i class="glyphicon glyphicon-triangle-right fa-fw"></i> <strong>Stay Close to Family</strong>!</li>
-                        </ul>
-                        <small>Click each career for employment projections.</small>
-                    </div>
-                    <div class="col-md-6">
-                        <h2 class="text-primary">Try <strong>DreamJob</strong></h2>
-                        <h4><em>an online web application designed to connect youth with meaningful employment opportunities.</em></h4>
-                        </br>
-
-                        <p>This application was created by <strong><a href="/contact">four students</a></strong> from Lambton College in Sarnia, Ontario, Canada.
-                    </div>
-                </div>
-
-                <div class="row"></br>
-                    <h3>Resources</h3>
-                    <h4>Government of Canada Federal Dataset</h4> <a href="http://open.canada.ca/data/en/dataset/e80851b8-de68-43bd-a85c-c72e1b3a3890">Canadian Occupational Projection System (COPS) - 2013 to 2022 projections</a></br>
-                        <small>Annual Employment Projections</br>
-                            Annual Change of the Projected Occupational Employment</br>
-                            Replacement Demand in the Form of Annual Retirement Estimates</small>
-                        <h2></h2><small></small>
-                        <h2></h2><small></small>
-                        <h2></h2><small></small>
-                        <h2></h2><small></small>
-                </div>
             </div>
+
+
         </div>
         <!-- /#page-wrapper -->
 
@@ -209,9 +174,6 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="/sb-admin-2.js"></script>
-
-    <!-- Declaring Chart.js -->
-
 
 </body>
 
