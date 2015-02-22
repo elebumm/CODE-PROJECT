@@ -4,7 +4,7 @@
 var mongoose = require('mongoose');
 var db = require('../db');
 
-var summary = db.model('summary', {
+var Summary = db.model('Summary', {
     ID : { type : String, required : true },
     emp_2012 : { type : Number, required : true },
     emploi_growth : { type : Number, required : true },
@@ -21,4 +21,4 @@ var summary = db.model('summary', {
     final_assessment_f : { type : String, required : true }
 });
 
-module.exports = summary;
+module.exports = Summary;
