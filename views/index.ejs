@@ -112,60 +112,23 @@
         <!-- /.navbar-static-side -->
     </nav>
 
-
     <!-- /#page-wrapper -->
             <!-- /.navbar-header -->
 
         <div id="page-wrapper">
+                <img class="img-responsive center-block" id="introImage" src="mainLogo.png">
 
-            <script>
-                var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
-
-                var barChartData = {
-                    labels : ["January","February","March","April","May","June","July"],
-                    datasets : [
-                        {
-                            fillColor : "rgba(220,220,220,0.5)",
-                            strokeColor : "rgba(220,220,220,0.8)",
-                            highlightFill: "rgba(220,220,220,0.75)",
-                            highlightStroke: "rgba(220,220,220,1)",
-                            data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
-                        },
-                        {
-                            fillColor : "rgba(151,187,205,0.5)",
-                            strokeColor : "rgba(151,187,205,0.8)",
-                            highlightFill : "rgba(151,187,205,0.75)",
-                            highlightStroke : "rgba(151,187,205,1)",
-                            data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
-                        }
-                    ]
-
-                }
-                window.onload = function(){
-                    var ctx = document.getElementById("canvas").getContext("2d");
-                    window.myBar = new Chart(ctx).Bar(barChartData, {
-                        responsive : true
-                    });
-                }
-
-            </script>
-            <!--    <div style="width: 35%">
-              <canvas id="canvas" height="100" width="100" style="width : 50%"></canvas>
-            </div> -->
-
-                    <img class="img-responsive center-block" id="introImage" src="mainLogo.png">
-
-                <div class="container-fluid" id="introPanel">
-                            <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title" class="lead">Build your path to <em>Success</em>. Discover your <em>Dream Job</em>.</h3>
-                                    </div>
-                                <div class="panel-body">
-                                    <a class="btn btn-default btn btn-primary btn-lg center-block" href="#" role="button">Design Your Dream</a></br>
-                                    <p>Use the <strong><i class="fa fa-wrench fa-fw"></i> Filters</strong> on the side panel to refine your search!</p>
-                                </div>
-                            </div>
+            <div class="container-fluid" id="introPanel">
+                <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title" class="lead">Build your path to <em>Success</em>. Discover your <em>Dream Job</em>.</h3>
+                        </div>
+                    <div class="panel-body">
+                        <a class="btn btn-default btn btn-primary btn-lg center-block" href="#" role="button">Design Your Dream</a></br>
+                        <p>Use the <strong><i class="fa fa-wrench fa-fw"></i> Filters</strong> on the side panel to refine your search!</p>
+                    </div>
                 </div>
+            </div>
         </div>
         <!-- /#page-wrapper -->
 

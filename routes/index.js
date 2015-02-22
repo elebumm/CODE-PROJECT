@@ -22,7 +22,7 @@ router.get('/about', function(req, res, next) {
 
 /* GET contact page. */
 router.get('/contact', function(req, res, next) {
-    res.render('contact', {title: 'ContactDream Job'});
+    res.render('contact', {title: 'Contact DreamJob'});
 });
 
 router.get('/pullIDs', function(req, res, next) {
