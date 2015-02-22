@@ -45,16 +45,22 @@ router.get('/annJobVacYrID/:jobID/:year', function(req, res, next) {
     res.render('results', {title: 'DreamJob Results', job: name, year: year, numVacancies: array});
 });
 
+// ANNUAL EMPLOYMENT & RETIREMENT PROJECTIONS
+// ----------------------------------------------------------------------------------------
 
+// Annual Employment & Retirement Projections
+router.get('/annEmpRetProj/:eCat1/:eCat2/:eCat3/:rCat1/:rCat2/:rCat3/:yStart/:yEnd', function(req, res, next) {
+
+    res.render('results', {title: 'DreamJob Results', empResultsCat1: value, empResultsCat2: value, empResultsCat3: value,
+        retResultsCat1: value, retResultsCat2: value, retResultsCat3: value, yearStart: value, yearEnd: value});
+});
+
+/*
 // ANNUAL EMPLOYMENT PROJECTIONS
 // ----------------------------------------------------------------------------------------
 
 // Annual Employment Projections All Data
 router.get('/annEmpProAll/', function(req, res, next) {
-    var value = {
-
-    }
-
     res.render('results', {title: 'DreamJob Results', results: value});
 });
 
@@ -95,7 +101,7 @@ router.get('/annRetProCat/:cat/startYear/:endYear', function(req, res, next) {
 router.get('/annRetProCatRan/:cat/startYear/:endYear', function(req, res, next) {
     res.render('results', {title: 'DreamJob Results', jobCat: value, startYear: value, endYear: value});
 });
-
+*/
 // SUMMARY OF CUMULATIVE JOB OPENINGS AND JOB SEEKRS
 // ---------------------------------------------------------------------------------------
 // URL args:
