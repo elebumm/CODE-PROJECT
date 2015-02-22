@@ -11,17 +11,21 @@ var endOfLine = require('os').EOL;
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+<<<<<<< HEAD
+  res.render('index', { title: 'DreamJob | Youth Employment'});
+=======
   res.render('index', { title: 'Express' });
+>>>>>>> 6a6092147f148ef691384328825a22d7713e366f
 });
 
 /* GET about page. */
 router.get('/about', function(req, res, next) {
-    res.render('about', {title: 'About Dream Job'});
+    res.render('about', {title: 'About DreamJob'});
 });
 
 /* GET contact page. */
 router.get('/contact', function(req, res, next) {
-    res.render('contact', {title: 'Contact Dream Job'});
+    res.render('contact', {title: 'ContactDream Job'});
 });
 
 router.get('/pullIDs', function(req, res, next) {
