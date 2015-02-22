@@ -7,9 +7,10 @@ var bodyParser = require('body-parser');
 //var csv = require('express-csv');
 
 var routes = require('./routes/index');
-var routes = require('./routes/index');
 var users = require('./routes/users');
 var test = require('./routes/test');
+var results = require('./routes/results');
+
 
 var app = express();
 
@@ -32,6 +33,7 @@ app.enable('trust proxy');
 app.use('/', routes);
 app.use('/users', users);
 app.use('/test', test);
+app.use('/results', results);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
