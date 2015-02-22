@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var Vacancy = require('../models/vacancy_stats');
 
 /* GET contact page. */
 router.get('/', function(req, res, next) {
@@ -31,18 +32,43 @@ router.get('/jobCat', function(req, res, next) {
 /* --------------- JOB VACANCY STATISTICS ---------------------- */
 
 // All Annual Job Vacancies by Year
-router.get('/annJobVacYr/:year', function(req, res, next) {
-    res.render('results', {title: 'DreamJob Results', years: array, numVacancies: array});
+router.get('/annJobVac/:year', function(req, res, next) {
+    Vacancy
+        .find({ ref_date : req.params.year, geo : "Canada", stats : "Number of job vacancies" })
+        .where('value').ne('F')
+        .select('value naics')
+        .exec(function(err, docs){
+            //res.json(docs);
+            res.render('results', {title: 'DreamJob Results', data : docs, year: req.params.year});
+        });
 });
 
 // All Annual Job Vacancies for Specified ID
-router.get('/annJobVacID/:jobID', function(req, res, next) {
-    res.render('results', {title: 'DreamJob Results', job: name, numVacancies: array});
+router.get('/annJobVac/:jobID', function(req, res, next) {
+    var query = "^" + req.params.jobID;
+
+    Vacancy
+        .find({ naics : new RegExp(query, "i"), geo : "Canada", stats : "Number of job vacancies"  })
+        .where('value').ne('F')
+        .select('ref_date naics value')
+        .exec(function(err, docs){
+            //res.json(docs);
+            res.render('results', {title: 'DreamJob Results', data: docs});
+        });
 });
 
 // All Annual Job Vacancies for Specified ID for Specified Year
-router.get('/annJobVacYrID/:jobID/:year', function(req, res, next) {
-    res.render('results', {title: 'DreamJob Results', job: name, year: year, numVacancies: array});
+router.get('/annJobVac/:jobID/:year', function(req, res, next) {
+    var query = "^" + req.params.jobID;
+
+    Vacancy
+        .find({ ref_date : req.params.year, naics : new RegExp(query, "i"), geo : "Canada", stats : "Number of job vacancies"  })
+        .where('value').ne('F')
+        .select('ref_date naics value')
+        .exec(function(err, docs){
+            //res.json(docs);
+            res.render('results', {title: 'DreamJob Results', data: docs, year : req.params.year});
+        });
 });
 
 // ANNUAL EMPLOYMENT & RETIREMENT PROJECTIONS
