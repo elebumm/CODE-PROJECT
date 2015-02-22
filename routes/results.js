@@ -1,28 +1,9 @@
 var express = require('express');
 var router = express.Router();
-var converter = require('json-2-csv');
-var http = require('http');
-var fs = require('fs');
-var request = require('request');
-var Grouping = require('../models/grouping');
-var Summary = require('../models/summary');
-var retirement = require('../models/retirement');
-var emp_projections = require('../models/emp_projections');
-var endOfLine = require('os').EOL;
-
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'DreamJob | Youth Employment'});
-});
-
-/* GET about page. */
-router.get('/about', function(req, res, next) {
-    res.render('about', {title: 'About DreamJob'});
-});
 
 /* GET contact page. */
-router.get('/contact', function(req, res, next) {
-    res.render('contact', {title: 'ContactDream Job'});
+router.get('/results', function(req, res, next) {
+    res.render('results', {title: 'ContactDream Results'});
 });
 
 router.get('/pullIDs', function(req, res, next) {
