@@ -12,7 +12,7 @@ var vacancy_stats = require('../models/vacancy_stats');
 var Converter = require("csvtojson").core.Converter;
 
 /* GET home page. */
-router.get('/index', function(req, res, next) {
+router.get('/', function(req, res, next) {
   res.render('index', { title: 'Dream Job'});
 });
 
