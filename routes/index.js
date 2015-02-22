@@ -10,18 +10,18 @@ var emp_projections = require('../models/emp_projections');
 var endOfLine = require('os').EOL;
 
 /* GET home page. */
-router.get('/index', function(req, res, next) {
-  res.render('index', { title: 'Dream Job'});
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'DreamJob'});
 });
 
 /* GET about page. */
 router.get('/about', function(req, res, next) {
-    res.render('about', {title: 'About Dream Job'});
+    res.render('about', {title: 'About DreamJob'});
 });
 
 /* GET about page. */
 router.get('/contact', function(req, res, next) {
-    res.render('contact', {title: 'Contact Dream Job'});
+    res.render('contact', {title: 'Contact DreamJob'});
 });
 
 router.get('/dataPull', function(req, res, next) {
