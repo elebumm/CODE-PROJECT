@@ -45,11 +45,6 @@ router.get('/annJobVacYrID/:jobID/:year', function(req, res, next) {
     res.render('results', {title: 'DreamJob Results', job: name, year: year, numVacancies: array});
 });
 
-// All Annual Job Vacancies for Specified ID for Year Range
-router.get('/annJobVacYrIDRan/:jobID/:startYear/:endYear', function(req, res, next) {
-    res.render('results', {title: 'DreamJob Results', job: name, years: array, numVacancies: array});
-});
-
 
 // ANNUAL EMPLOYMENT PROJECTIONS
 // ----------------------------------------------------------------------------------------

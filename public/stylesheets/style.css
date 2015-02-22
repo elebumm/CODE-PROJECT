@@ -375,3 +375,10 @@ table.dataTable thead .sorting:after {
 #introImage {
     max-width: 50%;
 }
+#radioLabels {
+    font-size: x-small;
+}
+
+#mainSubmit {
+    margin-top: 25px;
+}

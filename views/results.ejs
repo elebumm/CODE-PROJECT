@@ -53,7 +53,7 @@
         <!-- /.navbar-header -->
         <form class="navbar-form navbar-right" role="search">
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Sarnia, ON">
+                <input type="text" class="form-control" placeholder="Technology">
             </div>
             <button type="submit" class="btn btn-default">Search</button>
         </form>
@@ -75,34 +75,96 @@
                         <a href="#"><i class="fa fa-wrench fa-fw"></i> Filters<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <form class="navbar-form" role="search">
-                                <li>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Example</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h2 class="panel-title text-">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                    Job Vacancy
+                                                </a>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="vacancyFilters">
+                                            <div class="dropdown">
+                                                <button class="btn btn-sm dropdown-toggle btn-primary center-block" type="button" id="fieldName" data-toggle="dropdown" aria-expanded="true">
+                                                    Select Field
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                                                </ul>
+                                            </div>
+                                            <div id="radioLabels" class="panel-body">
+
+                                                <div class="radio">
+                                                    <label class="radio radio-inline control-label">
+                                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="allYears" checked>
+                                                        All
+                                                    </label>
+                                                    <label class="radio radio-inline control-label">
+                                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="2011">
+                                                        2011
+                                                    </label>
+                                                    <label class="radio radio-inline control-label">
+                                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="2012">
+                                                        2012
+                                                    </label>
+                                                    <label class="radio radio-inline control-label">
+                                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="2013">
+                                                        2013
+                                                    </label>
+
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </li>
-                                <li>
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox" value="">
-                                            Option one is this and that&mdash;be sure to include why it's great
-                                        </label>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Employment Projections
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="panel-body">
+                                                Filters
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox" value="">
-                                            Option two is disabled
-                                        </label>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingThree">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Replacement Demand
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="panel-body">
+                                                Filters
+                                            </div>
+                                        </div>
                                     </div>
-                                </li>
-                                <li>
-                                    <div class="checkbox">
-                                        <label>
-                                        <input type="checkbox"> Check me out
-                                        </label>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingThree">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Job Openings/Job Seekers
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="panel-body">
+                                                Filters
+                                            </div>
+                                        </div>
                                     </div>
-                                </li>
-                                <button type="submit" class="btn btn-default">Submit</button>
+                                    <button type="submit" id="mainSubmit" class="btn btn-sm btn-primary center-block">Submit</button>
+                                </div>
                             </form>
                         </ul>
                         <!-- /.nav-second-level -->
