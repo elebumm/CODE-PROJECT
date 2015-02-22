@@ -25,6 +25,9 @@
     <!-- Custom Fonts -->
     <link href="/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" type="image/png" src="favicon.ico"/>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -32,9 +35,11 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
+
 </head>
 
-<body>
+<body ng-app="">
 
     <div id="wrapper">
 
@@ -85,38 +90,46 @@
                                             </h2>
                                         </div>
                                         <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="vacancyFilters">
-                                            <div class="dropdown">
-                                                <button class="btn btn-sm dropdown-toggle btn-primary center-block" type="button" id="fieldName" data-toggle="dropdown" aria-expanded="true">
-                                                    Select Field
-                                                    <span class="caret"></span>
-                                                </button>
-                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-                                                </ul>
-                                            </div>
-                                            <div id="radioLabels" class="panel-body">
 
+                                            <div id="radioLabels" class="panel-body">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-sm dropdown-toggle btn-primary center-block" type="button" id="fieldName" data-toggle="dropdown" aria-expanded="true">
+                                                        Select Field
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <!--<select ng-model="field[$index]">-->
+                                                        <!--<option value="Information">Information Technology</option>-->
+                                                        <!--<option value="Forestry">Forestry</option>-->
+                                                        <!--<option value="Arts">Arts</option>-->
+                                                    <!--</select>-->
+                                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                        <li onselect="field1Func('abc')" role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                                        <li onselect="field1Func('def')" role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                                                        <li onselect="field1Func('ghi')" role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                                                        <li onselect="field1Func('jkl')" role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                                                    </ul>
+                                                </div>
+                                                <br>
                                                 <div class="radio">
                                                     <label class="radio radio-inline control-label">
-                                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="allYears" checked>
+                                                        <input ng-model="optionsRadios" type="radio" name="optionsRadios" id="optionsRadios1" value="">
                                                         All
                                                     </label>
                                                     <label class="radio radio-inline control-label">
-                                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="2011">
+                                                        <input ng-model="optionsRadios" type="radio" name="optionsRadios" id="optionsRadios1" value="2011">
                                                         2011
                                                     </label>
                                                     <label class="radio radio-inline control-label">
-                                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="2012">
+                                                        <input ng-model="optionsRadios" type="radio" name="optionsRadios" id="optionsRadios1" value="2012">
                                                         2012
                                                     </label>
                                                     <label class="radio radio-inline control-label">
-                                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="2013">
+                                                        <input ng-model="optionsRadios" type="radio" name="optionsRadios" id="optionsRadios1" value="2013">
                                                         2013
                                                     </label>
-
+                                                </div>
+                                                <div class = panel-footer>
+                                                    <a href="/results/annJobVac/Information{{ '/' + optionsRadios }}"><span id="mainSubmit" class="btn btn-sm btn-primary center-block">View</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -163,7 +176,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <button type="submit" id="mainSubmit" class="btn btn-sm btn-primary center-block">Submit</button>
+                                    <!--<a href="/results{{ '/' + optionsRadios }}"><span id="mainSubmit" class="btn btn-sm btn-primary center-block">Submit</span></a>-->
                                 </div>
                             </form>
                         </ul>
@@ -182,26 +195,26 @@
 
         <div id="page-wrapper">
 
-            <script>
+            <script >
                 var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
 
                 var barChartData = {
-                    labels : ["January","February","March","April","May","June","July"],
+                    labels : ["2011","2012","2013"],
                     datasets : [
                         {
-                            fillColor : "rgba(220,220,220,0.5)",
-                            strokeColor : "rgba(220,220,220,0.8)",
-                            highlightFill: "rgba(220,220,220,0.75)",
-                            highlightStroke: "rgba(220,220,220,1)",
-                            data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+                            fillColor : "#bce03d",
+                            strokeColor : "#bce03d",
+                            highlightFill: "#bce03d",
+                            highlightStroke: "#bce03d",
+                            data : [<%=
+                            for (var i = 0; i <= data.length; i++) {
+                                if (i == 35 -1) {
+                                   name(i).value ;
+                                } else name(i).value + ",";
+                            }
+                            %>]
                         },
-                        {
-                            fillColor : "rgba(151,187,205,0.5)",
-                            strokeColor : "rgba(151,187,205,0.8)",
-                            highlightFill : "rgba(151,187,205,0.75)",
-                            highlightStroke : "rgba(151,187,205,1)",
-                            data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
-                        }
+
                     ]
 
                 }
@@ -211,12 +224,87 @@
                         responsive : true
                     });
                 }
-
             </script>
+
+
+                        [
+                        {
+                            "_id": {
+                                "$oid": "54e969b6522083c906235307"
+                            },
+                            "ref_date": 2011,
+                            "geo": "Canada",
+                            "stats": "Number of job vacancies",
+                            "naics": "Information and cultural industries",
+                            "value": "5"
+                        },
+                            {"_id": {
+                                "$oid": "54e969b6522083c906235307"
+                            },
+                            "ref_date": 2013,
+                            "geo": "Canada",
+                            "stats": "Number of job vacancies",
+                            "naics": "Information and cultural industries",
+                            "value": "10"
+                        }, {"_id": {
+                                 "$oid": "54e969b6522083c906235307"
+                        },
+                "ref_date": 2012,
+                        "geo": "Canada",
+                        "stats": "Number of job vacancies",
+                        "naics": "Information and cultural industries",
+                        "value": "9"
+                }
+                ]
+
+
 
             <div style="width: 35%">
               <canvas id="canvas" height="100" width="100" style="width : 50%"></canvas>
             </div>
+
+            <script>
+                $.param({a:1, b:"Test 1"}) // gets: "a=1&b=Test+1"
+            </script>
+
+            <script type="text/javascript">
+
+                var target1 = "";
+                var target2 = "";
+
+                function field1Func(id) {
+                    target1 = id;
+                }
+
+                function field2Func(id) {
+                    target2 = id;
+                }
+
+                function doSubmit() {
+
+                    var url = "/results/annJobVac/" + target1 + "/" + target2;
+                    var theForm=document.getElementById("theForm");
+                    theForm.action = url;
+                    theForm.submit();
+                }
+            </script>
+
+            <!--
+            // All Annual Job Vacancies by Year
+        router.get('/annJobVacYr/:year', function(req, res, next) {
+            res.render('results', {title: 'DreamJob Results', years: array, numVacancies: array});
+        });
+
+        // All Annual Job Vacancies for Specified ID
+        router.get('/annJobVacID/:jobID', function(req, res, next) {
+            res.render('results', {title: 'DreamJob Results', job: name, numVacancies: array});
+        });
+
+        // All Annual Job Vacancies for Specified ID for Specified Year
+        router.get('/annJobVacYrID/:jobID/:year', function(req, res, next) {
+            res.render('results', {title: 'DreamJob Results', job: name, year: year, numVacancies: array});
+        });
+-->
 
 
         </div>
