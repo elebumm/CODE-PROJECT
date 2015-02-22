@@ -358,9 +358,20 @@ table.dataTable thead .sorting:after {
 }
 
 #welcomeImage {
-    width: 100%;
+    margin: 0px 0px 0px -10px; /* play with these to position the image */
+    position:absolute;
+    z-index:100;
+    width: 150px;
 }
 
 #home-icon {
     color: #bce03d;
+}
+
+#introPanel {
+    max-width: 75%;
+}
+
+#introImage {
+    max-width: 50%;
 }
