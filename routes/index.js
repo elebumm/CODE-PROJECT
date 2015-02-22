@@ -8,20 +8,22 @@ var Grouping = require('../models/grouping');
 var retirement = require('../models/retirement');
 var emp_projections = require('../models/emp_projections');
 var endOfLine = require('os').EOL;
+var vacancy_stats = require('../models/vacancy_stats');
+var Converter = require("csvtojson").core.Converter;
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'DreamJob'});
+router.get('/index', function(req, res, next) {
+  res.render('index', { title: 'Dream Job'});
 });
 
 /* GET about page. */
 router.get('/about', function(req, res, next) {
-    res.render('about', {title: 'About DreamJob'});
+    res.render('about', {title: 'About Dream Job'});
 });
 
 /* GET about page. */
 router.get('/contact', function(req, res, next) {
-    res.render('contact', {title: 'Contact DreamJob'});
+    res.render('contact', {title: 'Contact Dream Job'});
 });
 
 router.get('/dataPull', function(req, res, next) {
@@ -303,4 +305,54 @@ router.get('/pullEmpProjection', function(req, res, next) {
 
     });
 });
+
+router.get('/pullVacancyStats', function(req, res, next) {
+
+
+
+    var csvFileName="./temp/02840004-eng.csv";
+    var fileStream=fs.createReadStream(csvFileName);
+//new converter instance
+    var csvConverter=new Converter({constructResult:true});
+
+//end_parsed will be emitted once parsing finished
+    csvConverter.on("end_parsed",function(json){
+        //console.log(json); //here is your result json ob
+        for (var i = 0; i < json.length; i++) {
+            //console.log(json[i].Value);
+            if (typeof(json[i].Ref_Date) != "undefined") {
+                var group = new vacancy_stats({
+                    ref_date: json[i].Ref_Date,
+                    geo: json[i].GEO,
+                    stats: json[i].STATS,
+                    naics: json[i].NAICS,
+                    vector: json[i].Vector,
+                    coordinate: json[i].Coordinate,
+                    value: json[i].Value
+                });
+
+                group.save();
+                console.log("Item " + i + " insterted.");
+                //console.log(finalJSON[i]);
+
+            }
+        }
+        //res.json(json);
+        //console.log(typeof json);
+        //console.log(json);
+    });
+
+//read from file
+    fileStream.pipe(csvConverter);
+
+
+
+
+
+    //converter.csv2json(data, csv2jsonCallback, options);
+
+
+
+});
+
 module.exports = router;
