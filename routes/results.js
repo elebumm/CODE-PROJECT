@@ -1,28 +1,9 @@
 var express = require('express');
 var router = express.Router();
-var converter = require('json-2-csv');
-var http = require('http');
-var fs = require('fs');
-var request = require('request');
-var Grouping = require('../models/grouping');
-var Summary = require('../models/summary');
-var retirement = require('../models/retirement');
-var emp_projections = require('../models/emp_projections');
-var endOfLine = require('os').EOL;
-
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'DreamJob | Youth Employment'});
-});
-
-/* GET about page. */
-router.get('/about', function(req, res, next) {
-    res.render('about', {title: 'About DreamJob'});
-});
 
 /* GET contact page. */
-router.get('/contact', function(req, res, next) {
-    res.render('contact', {title: 'ContactDream Job'});
+router.get('/results', function(req, res, next) {
+    res.render('results', {title: 'ContactDream Results'});
 });
 
 router.get('/pullIDs', function(req, res, next) {
@@ -207,7 +188,7 @@ router.get('/dataPull', function(req, res, next) {
 
             for(var i = 0; i < elements.length - 1; i++)
             {
-                csv += "," + (2012 + i);
+                csv += ",r_" + (2012 + i);
             }
 
             csv += endOfLine;
@@ -227,12 +208,27 @@ router.get('/dataPull', function(req, res, next) {
                     });
                 };
 
-                //var counter = 0;
-                //
-                //for(var i = 0; i < json.length; i++)
-                //{
-                //    counter++;
-                //}
+                for (var i = 0; i < json.length; i++) {
+                    if (typeof(json[i].nCode) != "undefined") {
+                        var group = new projections({
+                            ID: json[i].nCode,
+                            year1: json[i].r_2013,
+                            year2: json[i].r_2014,
+                            year3: json[i].r_2015,
+                            year4: json[i].r_2016,
+                            year5: json[i].r_2017,
+                            year6: json[i].r_2018,
+                            year7: json[i].r_2019,
+                            year8: json[i].r_2020,
+                            year9: json[i].r_2021,
+                            year10: json[i].r_2022
+                        });
+
+                        group.save();
+                        console.log("Item " + i + " insterted.");
+                        //console.log(finalJSON[i]);
+                    }
+                }
 
                 res.json(json);
                 console.log(typeof json);

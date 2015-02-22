@@ -11,6 +11,8 @@
 
     <title><%= title %></title>
 
+    <script src="/Charts/Chart.js"></script>
+
     <!-- Bootstrap Core CSS -->
     <link href="/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 
@@ -34,7 +36,7 @@
 
 <body>
 
-<div id="wrapper">
+    <div id="wrapper">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
@@ -72,7 +74,7 @@
                     <li>
                         <a href="#"><i class="fa fa-wrench fa-fw"></i> Filters<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <form role="search">
+                            <form class="navbar-form" role="search">
                                 <li>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Example</label>
@@ -99,9 +101,6 @@
                                         <input type="checkbox"> Check me out
                                         </label>
                                     </div>
-                                </li>
-                                <li>
-
                                 </li>
                                 <button type="submit" class="btn btn-default">Submit</button>
                             </form>
@@ -152,37 +151,11 @@
                 }
 
             </script>
-            <!--    <div style="width: 35%">
+
+            <div style="width: 35%">
               <canvas id="canvas" height="100" width="100" style="width : 50%"></canvas>
-            </div> -->
-
-            <div class="row">
-                <div class="container-fluid">
-                    <div class="page-header">
-                        <h1><span class="text-primary">Contact</span><small> the Developers</small></h1>
-                    </div>
-                </div>
-
             </div>
 
-            <div class="row">
-                <div class="container col-md-4 pull-left">
-
-                    <h4>Steve Lambe <small>Back-End Development</small></h4>
-                    <a href="mailto:#">	firrae@gmail.com</a>
-
-                    <h4>Dylan Huculak <small>Back-End Development</small></h4>
-                    <a href="mailto:#">	dwhuculak@gmail.com</a>
-
-                    <h4>Lewis Menelaws <small>Housekeeping</small></h4>
-                    <a href="mailto:#">lmenelaws112@gmail.com
-                    </a>
-
-                    <h4>Jasmyn Newton <small>Front-End Development</small></h4>
-                    <a href="mailto:#">jnewton.dev@gmail.com</a>
-
-                </div>
-            </div>
 
         </div>
         <!-- /#page-wrapper -->
@@ -201,9 +174,6 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="/sb-admin-2.js"></script>
-
-    <!-- Declaring Chart.js -->
-
 
 </body>
 
