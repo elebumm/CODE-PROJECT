@@ -6,17 +6,17 @@ var db = require('../db');
 
 var emp_projections = db.model('epm_projections', {
     ID : { type : String, required : true },
-    year1 : { type : double, required : true },
-    year2 : { type : double, required : true },
-    year3 : { type : double, required : true },
-    year4 : { type : double, required : true },
-    year5 : { type : double, required : true },
-    year6 : { type : double, required : true },
-    year7 : { type : double, required : true },
-    year8 : { type : double, required : true },
-    year9 : { type : double, required : true },
-    year10 : { type : double, required : true },
-    year11 : { type : double, required : true }
+    r_2013: { type : Number, required : true },
+    r_2014: { type : Number, required : true },
+    r_2015: { type : Number, required : true },
+    r_2016: { type : Number, required : true },
+    r_2017: { type : Number, required : true },
+    r_2018: { type : Number, required : true },
+    r_2019: { type : Number, required : true },
+    r_2020: { type : Number, required : true },
+    r_2021: { type : Number, required : true },
+    r_2022 : { type : Number, required : true },
+    r_2023 : { type : Number, required : true }
 });
 
 module.exports = emp_projections;
