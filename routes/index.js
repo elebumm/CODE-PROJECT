@@ -13,17 +13,17 @@ var endOfLine = require('os').EOL;
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'DreamJob | Youth Employment'});
+  res.render('index', { title: 'Express' });
 });
 
 /* GET about page. */
 router.get('/about', function(req, res, next) {
-    res.render('about', {title: 'About DreamJob'});
+    res.render('about', {title: 'About Dream Job'});
 });
 
 /* GET contact page. */
 router.get('/contact', function(req, res, next) {
-    res.render('contact', {title: 'ContactDream Job'});
+    res.render('contact', {title: 'Contact Dream Job'});
 });
 
 router.get('/pullIDs', function(req, res, next) {
@@ -211,7 +211,8 @@ router.get('/dataPull', function(req, res, next) {
                 csv += ",r_" + (2012 + i);
             }
 
-            csv += endOfLine;
+            csv += "\n";
+            //csv += endOfLine;
 
             csv += body;
             console.log(csv);
