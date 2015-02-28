@@ -382,3 +382,7 @@ table.dataTable thead .sorting:after {
 #mainSubmit {
     margin-top: 25px;
 }
+
+#centered {
+    text-align: center;
+}
