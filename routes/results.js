@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var Vacancy = require('../models/vacancy_stats');
+var Projections = require('../models/emp_projections');
 
 /* GET contact page. */
 router.get('/', function(req, res, next) {
@@ -33,6 +34,18 @@ router.get('/jobCat', function(req, res, next) {
 
 // All Annual Job Vacancies by Year
 router.get('/annJobVac/:year', function(req, res, next) {
+    Vacancy
+        .find({ ref_date : req.params.year, geo : "Canada", stats : "Number of job vacancies" })
+        .where('value').ne('F')
+        .select('value naics')
+        .exec(function(err, docs){
+            res.json(docs);
+            //res.render('results', {title: 'DreamJob Results', data : docs, year: req.params.year});
+        });
+});
+
+// Post interface for our useage
+router.post('/annJobVac/:year', function(req, res, next) {
     Vacancy
         .find({ ref_date : req.params.year, geo : "Canada", stats : "Number of job vacancies" })
         .where('value').ne('F')
@@ -81,13 +94,17 @@ router.get('/annEmpRetProj/:eCat1/:eCat2/:eCat3/:rCat1/:rCat2/:rCat3/:yStart/:yE
         retResultsCat1: value, retResultsCat2: value, retResultsCat3: value, yearStart: value, yearEnd: value});
 });
 
-/*
+
 // ANNUAL EMPLOYMENT PROJECTIONS
 // ----------------------------------------------------------------------------------------
 
 // Annual Employment Projections All Data
 router.get('/annEmpProAll/', function(req, res, next) {
-    res.render('results', {title: 'DreamJob Results', results: value});
+    // res.render('results', {title: 'DreamJob Results', results: value});
+    Projections
+        .aggregate(
+
+        )
 });
 
 // Annual Employment Projections Using Year Range (All Job Categories)
@@ -104,7 +121,7 @@ router.get('/annEmpProCat/:cat/startYear/:endYear', function(req, res, next) {
 router.get('/annEmpProCatRan/:cat/startYear/:endYear', function(req, res, next) {
     res.render('results', {title: 'DreamJob Results', jobCat: value, startYear: value, endYear: value});
 });
-
+/*
 // REPLACEMENT DEMAND IN THE FORM OF ANNUAL RETIREMENT
 // ---------------------------------------------------------------------------------------
 
