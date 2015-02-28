@@ -74,6 +74,18 @@
                     <li>
                         <a href="/contact"><i class="glyphicon glyphicon-map-marker fa-fw"></i> Contact</a>
                     </li>
+                    <li>
+                        </br>
+                        <p class="text-muted text-center">Click to focus your search:</p>
+                        <button type="button" class="btn btn-primary center-block ">
+                            Projections
+                        </button>
+                        </br>
+                        <button type="button" class="btn btn-primary center-block ">
+                            Vacancies
+                        </button>
+                        </br>
+                    </li>
                 </ul>
             </div>
             <!-- /.sidebar-collapse -->
@@ -81,13 +93,11 @@
         <!-- /.navbar-static-side -->
     </nav>
 
-
     <!-- /#page-wrapper -->
     <!-- /.navbar-header -->
 
     <div id="page-wrapper">
-
-        <script >
+        <script>
             var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
 
             var barChartData = {
@@ -116,13 +126,11 @@
 
 
 
-        <div style="width: 35%">
+
+
+        <div style="max-width: 350px">
             <canvas id="canvas" height="100" width="100" style="width : 50%"></canvas>
         </div>
-
-        <script>
-            $.param({a:1, b:"Test 1"}) // gets: "a=1&b=Test+1"
-        </script>
 
         <!--
         // All Annual Job Vacancies by Year
@@ -159,6 +167,23 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="/sb-admin-2.js"></script>
+
+<script>
+    function createArray(cb){
+        $.getJSON("/results/annJobVac/2011", function(json) {
+            var myArray = [];
+            $.each(json, function() {
+                myArray.push("yo");
+            });
+            cb(myArray);
+        });
+    }
+
+    createArray(function(array) {
+        //your array is available here
+        console.log("here is my statement");
+    })
+</script>
 
 </body>
 
