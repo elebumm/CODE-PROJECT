@@ -38,8 +38,8 @@ router.get('/annJobVac/:year', function(req, res, next) {
         .where('value').ne('F')
         .select('value naics')
         .exec(function(err, docs){
-            //res.json(docs);
-            res.render('results', {title: 'DreamJob Results', data : docs, year: req.params.year});
+            res.json(docs);
+            //res.render('results', {title: 'DreamJob Results', data : docs, year: req.params.year});
         });
 });
 
@@ -52,8 +52,8 @@ router.get('/annJobVac/:jobID', function(req, res, next) {
         .where('value').ne('F')
         .select('ref_date naics value')
         .exec(function(err, docs){
-            //res.json(docs);
-            res.render('results', {title: 'DreamJob Results', data: docs});
+            res.json(docs);
+            // res.render('results', {title: 'DreamJob Results', data: docs});
         });
 });
 
@@ -66,8 +66,8 @@ router.get('/annJobVac/:jobID/:year', function(req, res, next) {
         .where('value').ne('F')
         .select('ref_date naics value')
         .exec(function(err, docs){
-            //res.json(docs);
-            res.render('results', {title: 'DreamJob Results', data: docs, year : req.params.year});
+            res.json(docs);
+            // res.render('results', {title: 'DreamJob Results', data: docs, year : req.params.year});
         });
 });
 
