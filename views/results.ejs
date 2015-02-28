@@ -168,22 +168,43 @@
 <!-- Custom Theme JavaScript -->
 <script src="/sb-admin-2.js"></script>
 
-<script>
-    function createArray(cb){
-        $.getJSON("/results/annJobVac/2011", function(json) {
-            var myArray = [];
-            $.each(json, function() {
-                myArray.push("yo");
-            });
-            cb(myArray);
-        });
-    }
 
-    createArray(function(array) {
-        //your array is available here
-        console.log("here is my statement");
-    })
-</script>
+    <!-- Output json array to console -->
+    <script>
+        function createArray(cb){
+            $.getJSON("/results/annJobVac/2011", function(json) {
+                var myArray = [];
+                $.each(json, function() {
+                    myArray.push(json);
+                });
+                cb(myArray);
+            });
+        }
+
+        createArray(function(array) {
+            //your array is available here
+            console.log(array);
+        })
+
+    </script>
+
+    <script>
+        function createFieldArray(cb){
+            $.getJSON("/results/annJobVac/2011", function(json) {
+                var myArray = [];
+                for (title in json) {
+                    myArray.push(json[title].naics);
+                }
+                cb(myArray);
+            });
+        }
+
+        createFieldArray(function(array) {
+            //your array is available here
+            console.log(array);
+        })
+
+    </script>
 
 </body>
 
