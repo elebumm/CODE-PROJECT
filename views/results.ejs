@@ -97,59 +97,33 @@
     <!-- /.navbar-header -->
 
     <div id="page-wrapper">
-        <script>
-            var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
 
-            var barChartData = {
-                labels : ["2011","2012","2013"],
-                datasets : [
-                    {
-                        fillColor : "#bce03d",
-                        strokeColor : "#bce03d",
-                        highlightFill: "#bce03d",
-                        highlightStroke: "#bce03d",
-                        data : [8000, 5655, 10000]
-                    },
+        <div class="row">
+            <div class="container-fluid">
+                <div class="page-header">
+                    <h1><span class="text-primary">Current Results:</span><small> Overall Job Vacancies</small></h1>
+                </div>
+            </div>
 
-                ]
-
-            }
-            window.onload = function(){
-                var ctx = document.getElementById("canvas").getContext("2d");
-                window.myBar = new Chart(ctx).Bar(barChartData, {
-                    responsive : true
-                });
-            }
-        </script>
-
-
-
-
-
-
-
-        <div style="max-width: 350px">
-            <canvas id="canvas" height="100" width="100" style="width : 50%"></canvas>
         </div>
 
-        <!--
-        // All Annual Job Vacancies by Year
-    router.get('/annJobVacYr/:year', function(req, res, next) {
-        res.render('results', {title: 'DreamJob Results', years: array, numVacancies: array});
-    });
-
-    // All Annual Job Vacancies for Specified ID
-    router.get('/annJobVacID/:jobID', function(req, res, next) {
-        res.render('results', {title: 'DreamJob Results', job: name, numVacancies: array});
-    });
-
-    // All Annual Job Vacancies for Specified ID for Specified Year
-    router.get('/annJobVacYrID/:jobID/:year', function(req, res, next) {
-        res.render('results', {title: 'DreamJob Results', job: name, year: year, numVacancies: array});
-    });
--->
-
-
+        <div class="row">
+            <div style="max-width: 350px" class="col-md-6">
+                <canvas id="canvas" height="100" width="100" style="width : 50%"></canvas>
+            </div>
+            <div class="panel panel-default col-md-5 col-md-offset-2">
+                <div class="panel-body">
+                    <h3 class="text-muted">Quick Stats:</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default col-md-10">
+                <div class="panel-body">
+                    <h3 class="text-muted">Filters:</h3>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- /#page-wrapper -->
 
@@ -192,17 +166,43 @@
         function createFieldArray(cb){
             $.getJSON("/results/annJobVac/2011", function(json) {
                 var myArray = [];
-                for (title in json) {
-                    myArray.push(json[title].naics);
+                for (value in json) {
+                    myArray.push(json[value].value);
                 }
                 cb(myArray);
             });
         }
 
+        var dataArray = [];
+
         createFieldArray(function(array) {
-            //your array is available here
+            for (value in array) {
+                dataArray.push(parseInt(array[value]));
+            }
             console.log(array);
+            console.log(dataArray);
         })
+
+        var barChartData = {
+            labels : ["1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"],
+            datasets : [
+                {
+                    fillColor : "#bce03d",
+                    strokeColor : "#bce03d",
+                    highlightFill: "#bce03d",
+                    highlightStroke: "#bce03d",
+                    data : dataArray
+                }
+
+            ]
+
+        }
+        window.onload = function(){
+            var ctx = document.getElementById("canvas").getContext("2d");
+            window.myBar = new Chart(ctx).Bar(barChartData, {
+                responsive : true
+            });
+        }
 
     </script>
 
